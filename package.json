@@ -1,14 +1,12 @@
 {
   "name": "@codeutils/eslint-plugin-code-struct",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Code structuring rules",
   "main": "lib/index.js",
-  
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/cssmiles/eslint-code-struct"
-    },
-
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cssmiles/eslint-code-struct"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
