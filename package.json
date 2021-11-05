@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "Code structuring rules",
   "main": "lib/index.js",
+  
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/cssmiles/eslint-code-struct"
+    },
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
