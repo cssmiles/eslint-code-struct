@@ -1,14 +1,15 @@
-# eslint-plugin-code-utils
+# eslint-plugin-code-struct
 
 ## Installation
 
 ```sh
-$ npm install --save-dev eslint eslint-plugin-code-utils
+$ npm install @codeutils/eslint-plugin-code-struct
 ```
 
 ## Setup
 
-####code-struct/no-inline-regex  
+#### code-struct/no-inline-regex
+
 To restrict use of direct regex statements in the code. Only export from a defined file(s) `allowedFilePaths`.  
 To disable the rule for file - `/*eslint-disable code-struct/no-inline-regex*/`.  
 Example eslint configs:
