@@ -9,6 +9,10 @@
   ],
   "author": "csp",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cssmiles/eslint-code-struct"
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "mocha tests --recursive"
