@@ -2,16 +2,30 @@
 
 ## Installation
 
+You'll first need to install [ESLint](https://eslint.org/):
+
 ```sh
-$ npm install @codeutils/eslint-plugin-code-struct
+npm i eslint --save-dev
 ```
 
-## Setup
+```sh
+$ npm i @codeutils/eslint-plugin-code-struct
+```
 
-#### code-struct/no-inline-regex
+## Usage
 
-To restrict use of direct regex statements in the code. Only export from a defined file(s) `allowedFilePaths`.  
-To disable the rule for file - `/*eslint-disable code-struct/no-inline-regex*/`.  
+#### code-struct/no-regex
+
+Disallow using regular expression in the code. Typical use case if to have all regex defined in a single file and disable the rule or have all regex in an external library.  
+To disable the rule for file - `/*eslint-disable code-struct/no-regex*/`.
+
+Install `eslint-plugin-no-regex`:
+
+```sh
+npm i eslint-plugin-no-regex --save-dev
+```
+
+Add `no-regex` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix.
 Example eslint configs:
 
 ```json
@@ -30,7 +44,7 @@ Example eslint configs:
   "plugins": ["@codeutils/code-struct"]
 }
 
-For TypeScript
+//For TypeScript
 
 {
   "parser": "@typescript-eslint/parser",
