@@ -1,18 +1,32 @@
 {
-  "name": "@codeutils/eslint-plugin-code-struct",
-  "version": "0.2.1",
-  "description": "Code structuring rules",
-  "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cssmiles/eslint-code-struct"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "eslint-plugin-code-struct",
+  "version": "0.0.0",
+  "description": "Eslint Plugins for improving code quality",
   "keywords": [
-    "eslint"
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
   ],
-  "author": "cssmiles",
-  "license": "MIT"
+  "author": "csp",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-plugin-eslint-plugin": "^4.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^9.1.3"
+  },
+  "engines": {
+    "node": "12.x || 14.x || >= 16"
+  },
+  "peerDependencies": {
+    "eslint": ">=6"
+  },
+  "license": "ISC"
 }

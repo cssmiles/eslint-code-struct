@@ -22,11 +22,27 @@ Example eslint configs:
     "node": true
   },
   "rules": {
-    "code-struct/no-inline-regex": [
+    "@codeutils/code-struct/no-regex": [
       "warn",
-      { "allowedFilePaths": ["src/utils/regex.js"] }
+      { "customMessage": "All regex should be kept in src/util/regex.js" }
     ]
   },
-  "plugins": ["code-struct"]
+  "plugins": ["@codeutils/code-struct"]
 }
+
+For TypeScript
+
+{
+  "parser": "@typescript-eslint/parser",
+   "rules": {
+    "@codeutils/code-struct/no-regex": [
+      "warn",
+      { "customMessage": "All regex should be kept in src/util/regex.js" }
+    ]
+   },
+  "plugins": ["@typescript-eslint", "@codeutils/code-struct"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"]
+}
+
+
 ```
