@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-code-struct",
+  "name": "@codeutils/eslint-plugin-code-struct",
   "version": "1.0.1",
   "description": "Eslint Plugins for improving code quality",
   "keywords": [
